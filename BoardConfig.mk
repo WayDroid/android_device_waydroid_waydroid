@@ -42,8 +42,8 @@ ifneq ($(TARGET_USE_MESA),false)
 BOARD_MESA3D_USES_MESON_BUILD := true
 BOARD_MESA3D_MESON_ARGS := -Dallow-kcmp=enabled -Dintel-clc=system
 BOARD_MESA3D_BUILD_LIBGBM := true
-BOARD_MESA3D_GALLIUM_DRIVERS := r300 r600 nouveau freedreno llvmpipe v3d vc4 etnaviv tegra svga virgl panfrost lima radeonsi
-BOARD_MESA3D_VULKAN_DRIVERS := broadcom freedreno panfrost swrast virtio amd
+BOARD_MESA3D_GALLIUM_DRIVERS := r300 r600 nouveau llvmpipe svga virgl lima radeonsi
+BOARD_MESA3D_VULKAN_DRIVERS := swrast virtio amd
 endif
 
 # Filesystem
