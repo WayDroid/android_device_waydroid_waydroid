@@ -22,3 +22,8 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
+
+ifneq ($(TARGET_USE_MESA),false)
+BOARD_MESA3D_GALLIUM_DRIVERS += freedreno v3d vc4 etnaviv tegra panfrost
+BOARD_MESA3D_VULKAN_DRIVERS += broadcom fredreno panfrost
+endif
